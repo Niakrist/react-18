@@ -1,0 +1,5 @@
+.btnGroup {
+  display: grid;
+  grid-template-columns: 100px auto;
+  gap: 24px;
+}
