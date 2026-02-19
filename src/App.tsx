@@ -1,17 +1,21 @@
-import {
-  Batching,
-  ConcurrentModeDeferredValue,
-  ConcurrentModeTransition,
-  FlushSync,
-} from "./example";
+import { useId } from "react";
+import { Mike } from "./example/mike/Mike";
 
 function App() {
+  const id = useId();
   return (
     <div>
       {/* <Batching /> */}
       {/* <FlushSync /> */}
       {/* <ConcurrentModeTransition /> */}
-      <ConcurrentModeDeferredValue />
+      {/* <ConcurrentModeDeferredValue /> */}
+      {id}
+      {id}
+      {id}
+      {id}
+      {id}
+      {id}
+      <Mike />
     </div>
   );
 }
